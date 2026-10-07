@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | CarePoint Hospital</title>
+  <meta name="description" content="Contact CarePoint Hospital for appointments, general inquiries, and patient support.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="CarePoint Home"><span>CP</span> CarePoint</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html#appointment" class="btn btn-small">Book Appointment</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <p class="eyebrow">CONTACT US</p>
+        <h1>We are here to help.</h1>
+        <p>Reach our team for appointments, general inquiries, emergencies, and support across our hospital departments.</p>
+      </div>
+    </section>
+
+    <section class="section contact-page-section">
+      <div class="container contact-grid contact-page-grid">
+        <div class="contact-info-panel">
+          <h2>Hospital contact details</h2>
+          <div class="contact-list">
+            <p><span class="contact-label">Address</span><br>25 Health Avenue, Lagos, Nigeria</p>
+            <p><span class="contact-label">Phone</span><br>+234 800 123 4567</p>
+            <p><span class="contact-label">Email</span><br>hello@carepoint.example</p>
+            <p><span class="contact-label">Hours</span><br>Mon–Sat: 7:00 AM – 8:00 PM<br>Emergency: 24/7</p>
+          </div>
+        </div>
+
+        <div class="contact-map-box" aria-label="Location map placeholder">Hospital Campus</div>
+      </div>
+    </section>
+
+    <section class="appointment section" id="appointment">
+      <div class="container appointment-grid">
+        <div>
+          <p class="eyebrow">BOOK A VISIT</p>
+          <h2>Schedule an appointment</h2>
+          <p>Fill in your details and our team will contact you to confirm your appointment.</p>
+        </div>
+
+        <form id="appointmentForm">
+          <div class="form-row">
+            <input type="text" id="name" placeholder="Full name" required>
+            <input type="tel" id="phone" placeholder="Phone number" required>
+          </div>
+          <div class="form-row">
+            <select id="department" required>
+              <option value="">Select department</option>
+              <option>General Medicine</option>
+              <option>Cardiology</option>
+              <option>Paediatrics</option>
+              <option>Emergency Care</option>
+            </select>
+            <input type="date" id="date" required>
+          </div>
+          <textarea id="message" rows="4" placeholder="Additional message (optional)"></textarea>
+          <button type="submit" class="btn">Request Appointment</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 CarePoint Hospital. Demo website.</p>
+      <p>Quality care. Every patient. Every day.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
